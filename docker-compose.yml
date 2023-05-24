@@ -38,6 +38,7 @@ services:
         restart: always
         networks:
             - tutorial
+        command: bash -c "composer install && apache2-foreground"
 
 networks:
     tutorial:
